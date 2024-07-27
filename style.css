@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "poppins", "sans-serif";
+}
+section{
+    color: black;
+    background-color: rgb(178, 228, 255);
+    padding: 5rem 0;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden; /* avoid scroll horizontaly  */
+    perspective: 10px;
+}
+
+.container{ 
+    position: relative;    
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*element should be positioned in the 3D-space.*/
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+h1{
+    font-size: 11rem;
+    font-family: "poppins", "sans-serif";
+    top: 33rem; /*  */
+    position: absolute;
+    color: rgb(254, 252, 252);
+    text-shadow: rgb(0, 0, 0) 10px -5px 15px
+}
+.headdeaing1{
+    position: absolute;
+    z-index: 1;
+}
+.background{
+    transform: translateZ(-40px) scale(5.5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3.2);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.desc{
+    font-size:  5rem;
+    padding: 0 10rem;
+    transform: translateX(10%) translatey(25%);
+}
+
+.secHeading{
+    position: absolute;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%) translatey(-50%);
+    color: rgb(178, 228, 255);
+    background-color: rgb(2, 171, 255);
+    
+    text-shadow: rgb(75, 146, 227) 2px 0 2px;
+    border-radius: 5px;
+
+}
+
+.wonders{ 
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.wonder1{
+    background-image: url(./images/Pyramids.jpg);
+}
+.wonder2{
+    background-image: url(./images/The_Monastery_Petr_Jordan8.jpg);
+     
+}
+.wonder3{
+    background-image: url(./images/The_Great_Wall_of_China_at_Jinshanling.jpg);
+      
+}
+.wonder4{
+    background-image: url(./images/Rome_Colosseum_exterior_panorama.jpg);
+    
+}
+.wonder5{
+    background-image: url(./images/Chichen-Itza-Castillo-Seen-From-East.JPG);
+     
+ 
+}
+.wonder6{
+    background-image: url(./images/Machu_Picchu\,_Peru.jpg);
+     
+}
+.wonder7{
+    background-image: url(./images/Taj_Mahal.jpg);
+}
+
+.info{
+    padding: 0 10rem;
+    font-size: 1.5rem;
+    margin: 5rem 0;
+    /* position: absolute; */
+}
